@@ -1,0 +1,164 @@
+{
+  "restaurant": "Dragon Palace",
+  "categories": [
+    {
+      "name": "Erikoispäivälliset (Set Dinners)",
+      "items": [
+        { "id": "A", "name": "Set Dinner A | Single Dinner", "price": 16.5, "items": ["Soup of the Day or Spring Rolls", "Beijing Chicken", "Onion Beef", "Sweet & Sour Fish", "Deep-Fried Banana with Ice Cream"] },
+        { "id": "B", "name": "Set Dinner B | Dinner Two", "price": 33.0, "items": ["Soup of the Day or Spring Rolls", "Szechuan Beef", "Deep-Fried Chicken with Sweet & Sour Sauce", "Deep-Fried Banana with Ice Cream"] },
+        { "id": "C", "name": "Set Dinner C | Dinner Three", "price": 48.0, "items": ["Soup of the Day or Spring Rolls", "Kung Po Chicken", "Satay Beef", "Sweet & Sour Pork", "Deep-Fried Banana with Ice Cream"] },
+        { "id": "D", "name": "Set Dinner D | Dinner Four", "price": 65.0, "items": ["Soup of the Day or Spring Rolls", "Deep-Fried King Prawns with Sweet & Sour Sauce", "Chicken with Chinese Mushrooms", "Beef with Chili Sauce", "Grilled Pork", "Deep-Fried Banana with Ice Cream"] }
+      ]
+    },
+    {
+      "name": "Alkuruoat (Appetizers & Soup)",
+      "items": [
+        { "id": 1, "name": "Kanasienikeitto", "english": "Chicken Mushroom Soup", "price": 4.5 },
+        { "id": 2, "name": "Kanasmaissikeitto", "english": "Chicken Sweet Corn Soup", "price": 4.0 },
+        { "id": 3, "name": "Beijing-keitto (tulinen hapankeitto)", "english": "Beijing Soup (Hot and Sour Soup)", "price": 4.0 },
+        { "id": 4, "name": "Kananmunakeitto", "english": "Egg Drop Soup", "price": 4.0 },
+        { "id": 5, "name": "Wonton-keitto", "english": "Wonton Soup", "price": 5.0 },
+        { "id": 6, "name": "Vihanneskeitto", "english": "Vegetable Soup", "price": 4.0 },
+        { "id": 7, "name": "Äyriäiskeitto", "english": "Seafood Soup", "price": 5.0 },
+        { "id": 8, "name": "Kanavihanneskeitto", "english": "Chicken Vegetable Soup", "price": 5.0 },
+        { "id": 9, "name": "Kevätrullia", "english": "Spring Rolls", "price": 4.0 },
+        { "id": 10, "name": "Friteerattuja katkarapuja", "english": "Deep Fried King Prawns", "price": 8.0 },
+        { "id": 11, "name": "Friteerattuja mustekalarenkaita", "english": "Deep Fried Squid Rings", "price": 6.5 },
+        { "id": 12, "name": "Friteerattu lajitelma", "english": "Mixed Fried Appetizers (King Prawns, Spring Roll, Squid)", "price": 8.0 },
+        { "id": 13, "name": "Katkarapusalaatti", "english": "Shrimp Salad", "price": 8.0 }
+      ]
+    },
+    {
+      "name": "Naudanliharuoat (Beef Dishes)",
+      "items": [
+        { "id": 14, "name": "Härkää ja ananasta", "english": "Beef with Pineapple", "price": 12.5 },
+        { "id": 15, "name": "Härkää mustapapukastikkeessa", "english": "Beef with Black Bean Sauce", "price": 12.5 },
+        { "id": 16, "name": "Härkää ja kiinalaisia sieniä", "english": "Beef with Chinese Mushrooms", "price": 12.5 },
+        { "id": 17, "name": "Härkää osterikastikkeessa", "english": "Beef with Oyster Sauce", "price": 12.5 },
+        { "id": 18, "name": "Sipulihärkää", "english": "Onion Beef", "price": 12.5 },
+        { "id": 19, "name": "Szechuan-härkää", "english": "Szechuan Beef", "price": 12.5 },
+        { "id": 20, "name": "Curryhärkää", "english": "Curry Beef", "price": 12.5 },
+        { "id": 21, "name": "Härkää, bambua ja herkkusieniä", "english": "Beef with Bamboo Shoots and Mushrooms", "price": 12.5 },
+        { "id": 22, "name": "Chilihärkää", "english": "Chili Beef", "price": 12.5 },
+        { "id": 23, "name": "Chop suey härkää", "english": "Chop Suey Beef", "price": 12.5 },
+        { "id": 24, "name": "Inkiväärihärkää", "english": "Ginger Beef", "price": 12.5 },
+        { "id": 25, "name": "Beijing-härkää", "english": "Beijing Beef", "price": 12.5 },
+        { "id": 26, "name": "Tomaattihärkää", "english": "Tomato Beef", "price": 12.5 },
+        { "id": 27, "name": "Satay-härkää", "english": "Satay Beef", "price": 12.5 }
+      ]
+    },
+    {
+      "name": "Kanaruoat (Chicken Dishes)",
+      "items": [
+        { "id": 28, "name": "Kanaa chilikastikkeessa", "english": "Chicken with Chili Sauce", "price": 11.5 },
+        { "id": 29, "name": "Kanaa sataykastikkeessa", "english": "Chicken with Satay Sauce", "price": 11.5 },
+        { "id": 30, "name": "Kanaa mustapapukastikkeessa", "english": "Chicken with Black Bean Sauce", "price": 11.5 },
+        { "id": 31, "name": "Kanaa ja kiinalaisia sieniä", "english": "Chicken with Chinese Mushrooms", "price": 11.5 },
+        { "id": 32, "name": "Kanaa currykastikkeessa", "english": "Chicken with Curry Sauce", "price": 12.5 },
+        { "id": 33, "name": "Kanaa sitruunakastikkeessa", "english": "Chicken with Lemon Sauce", "price": 12.5 },
+        { "id": 34, "name": "Kanaa appelsiinikastikkeessa", "english": "Chicken with Orange Sauce", "price": 11.5 },
+        { "id": 35, "name": "Kanaa ja ananasta", "english": "Chicken with Pineapple", "price": 11.5 },
+        { "id": 36, "name": "Kanaa, bambua ja herkkusieniä", "english": "Chicken, Bamboo and Mushrooms", "price": 11.5 },
+        { "id": 37, "name": "Kun Po kanaa", "english": "Kun Po Chicken", "price": 11.5 },
+        { "id": 38, "name": "Sipulikanaa", "english": "Onion Chicken", "price": 11.5 },
+        { "id": 39, "name": "Szechuan kanaa", "english": "Szechuan Chicken", "price": 11.5 },
+        { "id": 40, "name": "Friteerattua kanaa hapanimeläkastikkeessa", "english": "Deep Fried Chicken with Sweet & Sour Sauce", "price": 11.5 },
+        { "id": 41, "name": "Chop suey kanaa", "english": "Chop Suey Chicken", "price": 11.5 },
+        { "id": 42, "name": "Beijing kanaa", "english": "Beijing Chicken", "price": 11.5 },
+        { "id": 43, "name": "Inkivääri kanaa", "english": "Ginger Chicken", "price": 11.5 }
+      ]
+    },
+    {
+      "name": "Porsaanliharuoat (Pork Dishes)",
+      "items": [
+        { "id": 44, "name": "Friteerattua possua hapanimeläkastikkeessa", "english": "Deep Fried Pork with Sweet & Sour Sauce", "price": 11.5 },
+        { "id": 45, "name": "Grillattua porsaanlihaa", "english": "Grilled Pork", "price": 13.0 },
+        { "id": 46, "name": "Porsaanlihaa chilikastikkeessa", "english": "Pork with Chili Sauce", "price": 11.5 },
+        { "id": 47, "name": "Porsaanlihaa, bambua ja herkkusieniä", "english": "Pork, Bamboo and Mushrooms", "price": 11.5 },
+        { "id": 48, "name": "Porsaanlihaa mustapapukastikkeessa", "english": "Pork with Black Bean Sauce", "price": 11.5 },
+        { "id": 49, "name": "Porsaanlihaa cashew-pähkinöillä", "english": "Pork with Cashew Nuts", "price": 11.5 },
+        { "id": 50, "name": "Porsaanlihaa currykastikkeessa", "english": "Pork with Curry Sauce", "price": 11.5 },
+        { "id": 51, "name": "Szechuan porsaanlihaa", "english": "Szechuan Pork", "price": 11.5 },
+        { "id": 52, "name": "Chop suey porsaanlihaa", "english": "Chop Suey Pork", "price": 11.5 },
+        { "id": 53, "name": "Porsaanlihaa ja ananasta", "english": "Pork with Pineapple", "price": 11.5 }
+      ]
+    },
+    {
+      "name": "Lisukkeet (Sides)",
+      "items": [
+        { "name": "Paistettua riisiä", "english": "Fried Rice", "price": 3.0 },
+        { "name": "Paistettua nuudelia", "english": "Fried Noodles", "price": 4.0 }
+      ]
+    },
+    {
+      "name": "Äyriäis- ja kalaruoat (Seafood Dishes)",
+      "items": [
+        { "id": 54, "name": "Kuhaa ja vihanneksia", "english": "Walleye and Mixed Vegetables", "price": 13.0 },
+        { "id": 55, "name": "Friteerattua kuhaa hapanimeläkastikkeessa", "english": "Deep Fried Walleye with Sweet & Sour Sauce", "price": 13.0 },
+        { "id": 56, "name": "Kuhaa currykastikkeessa", "english": "Walleye with Curry Sauce", "price": 13.0 },
+        { "id": 57, "name": "Friteerattua mustekalaa hapanimeläkastikkeessa", "english": "Deep Fried Squid with Sweet & Sour Sauce", "price": 14.0 },
+        { "id": 58, "name": "Mustekalaa mustapapukastikkeessa", "english": "Squid with Black Bean Sauce", "price": 14.5 },
+        { "id": 59, "name": "Friteerattuja katkarapuja hapanimeläkastikkeessa", "english": "Deep Fried Shrimps with Sweet & Sour Sauce", "price": 14.5 },
+        { "id": 60, "name": "Katkarapuja ja vihanneksia", "english": "Shrimps with Vegetables", "price": 14.5 },
+        { "id": 61, "name": "Friteerattuja jättikatkarapuja hapanimeläkastikkeessa", "english": "Deep Fried King Prawns with Sweet & Sour Sauce", "price": 16.0 },
+        { "id": 62, "name": "Jättikatkarapuja ja cashew-pähkinöitä", "english": "King Prawns with Cashew Nuts", "price": 17.5 },
+        { "id": 63, "name": "Jättikatkarapuja chilikastikkeessa", "english": "King Prawns with Chili Sauce", "price": 17.5 },
+        { "id": 64, "name": "Jättikatkarapuja szechuan-kastikkeessa", "english": "King Prawns with Szechuan Sauce", "price": 17.5 },
+        { "id": 65, "name": "Jättikatkarapuja sataykastikkeessa", "english": "King Prawns with Satay Sauce", "price": 17.5 }
+      ]
+    },
+    {
+      "name": "Kasvisruoat (Vegetarian Dishes)",
+      "items": [
+        { "id": 66, "name": "Paistettua tofua kastikkeen kanssa oman valinnan mukaan", "english": "Fried Tofu with Sauce of Your Choice", "price": 11.5, "options": ["Szechuan", "Satay", "Sweet & Sour", "Curry"] },
+        { "id": 67, "name": "Paistettua vihanneksia kastikkeen kanssa oman valinnan mukaan", "english": "Fried Vegetables with Sauce of Your Choice", "price": 9.5, "options": ["Szechuan", "Satay", "Sweet & Sour", "Curry"] }
+      ]
+    },
+    {
+      "name": "Dragon Palace Specials",
+      "items": [
+        { "id": 68, "name": "Neljä erilaista makua", "english": "Four Different Tastes (King Prawns, Pork, Beef, Chicken)", "price": 14.5 },
+        { "id": 69, "name": "Dragon Palace Special", "english": "Different Meats, King Prawns, Vegetables", "price": 17.0 },
+        { "id": 70, "name": "Kantonin ankkaa", "english": "Grilled Duck with Oyster Sauce", "price": 18.0 },
+        { "id": 71, "name": "Szechuan ankkaa", "english": "Szechuan Duck", "price": 18.0 },
+        { "id": 72, "name": "Ankkaa ja kiinalaisia sieniä", "english": "Duck with Chinese Mushrooms", "price": 18.0 },
+        { "id": 73, "name": "Ma Po – Tofu", "english": "Tofu, Pork, Chinese Mushrooms", "price": 14.5 }
+      ]
+    },
+    {
+      "name": "Kuumassa pannussa (Hot Pan)",
+      "items": [
+        { "id": 74, "name": "Valkosipulihärkää kuumassa pannussa", "english": "Garlic Beef in a Hot Pan", "price": 14.5 },
+        { "id": 75, "name": "Valkosipulikanaa kuumassa pannussa", "english": "Garlic Chicken in a Hot Pan", "price": 13.0 },
+        { "id": 76, "name": "Valkosipulimustekalaa kuumassa pannussa", "english": "Garlic Squid in a Hot Pan", "price": 14.0 },
+        { "id": 77, "name": "Meren antimia kuumassa pannussa", "english": "Garlic Seafood in a Hot Pan", "price": 18.0 },
+        { "id": 78, "name": "Jättikatkarapuja kuumassa pannussa", "english": "Garlic King Prawns in a Hot Pan", "price": 18.0 },
+        { "id": 79, "name": "Valkosipuliankkaa kuumassa pannussa", "english": "Garlic Duck in a Hot Pan", "price": 18.0 },
+        { "id": 80, "name": "Valkosipulikalaa kuumassa pannussa", "english": "Garlic Fish in a Hot Pan", "price": 14.5 },
+        { "id": 81, "name": "Valkosipulitofua ja siitakesieniä kuumassa pannussa", "english": "Garlic Tofu with Shiitake Mushrooms in a Hot Pan", "price": 12.0 },
+        { "id": 82, "name": "Valkosipuli porsaanlihaa kuumassa pannussa", "english": "Garlic Pork in a Hot Pan", "price": 13.0 }
+      ]
+    },
+    {
+      "name": "Paistetut riisit (Fried Rice)",
+      "items": [
+        { "id": 83, "name": "Paistettua riisiä ja kanaa", "english": "Fried Rice with Chicken", "price": 11.5 },
+        { "id": 84, "name": "Paistettua riisiä kantonilaiseen tapaan", "english": "Cantonese Fried Rice", "price": 11.5 },
+        { "id": 85, "name": "Nasi Goreng (riisiä, kanaa, härkää, katkarapuja)", "english": "Nasi Goreng (Rice, Chicken, Beef, Shrimps)", "price": 12.5 },
+        { "id": 86, "name": "Paistettua riisiä ja härkää", "english": "Fried Rice with Beef", "price": 12.5 },
+        { "id": 87, "name": "Paistettua riisiä ja katkarapuja", "english": "Fried Rice with Shrimps", "price": 13.0 }
+      ]
+    },
+    {
+      "name": "Paistetut nuudelit (Fried Noodles)",
+      "items": [
+        { "id": 88, "name": "Paistettua nuudelia ja kanaa", "english": "Fried Noodles with Chicken", "price": 11.5 },
+        { "id": 89, "name": "Paistettua nuudelia ja härkää", "english": "Fried Noodles with Beef", "price": 12.5 },
+        { "id": 90, "name": "Paistettua nuudelia ja katkarapuja", "english": "Fried Noodles with Shrimps", "price": 13.0 },
+        { "id": 91, "name": "Paistettua udon nuudelia ja kanaa", "english": "Fried Udon Noodles with Chicken", "price": 11.5 },
+        { "id": 92, "name": "Paistettua udon nuudelia ja härkää", "english": "Fried Udon Noodles with Beef", "price": 12.5 },
+        { "id": 93, "name": "Bami Goreng", "english": "Bami Goreng (Noodles, Rice, Chicken, Beef and Shrimps)", "price": 13.5 }
+      ]
+    }
+  ]
+}

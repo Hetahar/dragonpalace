@@ -1,0 +1,116 @@
+/* ========================= Page Styling (Menu Page) ========================= */
+:root {
+  --bg: #f8f4ee; /* warm beige */
+  --paper: #fffdfa;
+  --ink: #191919;
+  --muted: #191919; /* small text black */
+  --red: #b11a21;
+  --red-ink: #a3141a;
+  --gold: #c8a75a;
+  --line: #e7dfd3;
+
+  --font-display: ui-serif, 'Times New Roman', Georgia, Cambria, 'Noto Serif',
+    serif;
+  --font-body: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto,
+    'Noto Sans', Arial, sans-serif;
+}
+
+/* Global sanity */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html,
+body,
+#root {
+  min-height: 100%;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden; /* kill any right-side overflow */
+}
+
+/* SOLID beige base + subtle overlays that follow scroll */
+body {
+  color: var(--ink);
+  font-family: var(--font-body);
+  background-color: var(--bg); /* ensures beige all the way down */
+  background-image: radial-gradient(
+      90rem 90rem at 50% -10%,
+      #ffffff 0%,
+      transparent 40%
+    ),
+    linear-gradient(180deg, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0));
+  background-repeat: no-repeat, no-repeat;
+  background-size: cover, cover;
+  background-attachment: fixed, fixed; /* keeps the effect while scrolling */
+}
+
+/* Page wrapper */
+.menu-page {
+  min-height: 100dvh; /* Full viewport height */
+  display: flex;
+  flex-direction: column;
+  justify-content: center; /* Center content vertically */
+  align-items: center; /* Center content horizontally */
+}
+
+/* Header */
+.menu-page > header {
+  text-align: center; /* align centre */
+  padding: clamp(16px, 3vw, 32px);
+}
+.menu-page > header h1 {
+  margin: 0;
+  font-family: var(--font-display);
+  font-weight: 700;
+  font-size: clamp(24px, 4vw, 40px);
+  letter-spacing: 0.5px;
+  color: var(--ink);
+  position: relative;
+}
+.menu-page > header h1::after {
+  content: '';
+  display: block;
+  width: 140px;
+  height: 2px;
+  margin: 12px auto 0;
+  background: linear-gradient(90deg, transparent, var(--red), transparent);
+}
+.menu-page > header h1::before {
+  content: '';
+  display: block;
+  width: 48px;
+  height: 6px;
+  margin: 0 auto 4px;
+  background: var(--gold);
+  border-radius: 3px;
+}
+
+/* Main — truly centered content */
+.menu-page > main {
+  display: block; /* ensure no inherited flex/grid weirdness */
+  padding: clamp(16px, 3vw, 40px);
+}
+
+/* Center the direct child (MenuComponent) and cap width */
+.menu-page > main > * {
+  width: min(100%, 960px);
+  margin-inline: auto; /* centers horizontally */
+}
+
+/* Print */
+@media print {
+  body {
+    background: #fff !important;
+  }
+  .menu-page > header h1::before,
+  .menu-page > header h1::after {
+    display: none !important;
+  }
+}
