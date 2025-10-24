@@ -1,6 +1,6 @@
 {
     "fi": {
-      "description": "Dragon Palace on Turun Puutorissa toimiva kiinalainen ravintola. Tarjoamme buffet-lounaan arkisin klo 11–15. Hinta 10,50 €. Buffet sisältää sushia, kiinalaisia ruokia, päivän keiton, kahvin, teen ja makeisia.",
+      "description": "Dragon Palace on Turun Puutorissa toimiva kiinalainen ravintola.\n Tarjoamme buffet-lounaan arkisin klo 11–15. Hinta 10,50 €. \n Buffet sisältää sushia, kiinalaisia ruokia, päivän keiton, kahvin, teen ja makeisia.",
       "opening_hours": {
         "Ma–To": "11–20",
         "Pe": "11–21",
@@ -15,7 +15,7 @@
       "footer": "Tervetuloa nauttimaan!"
     },
     "en": {
-      "description": "Dragon Palace is a Chinese restaurant located in Turku’s Puutori. We serve a buffet lunch on weekdays from 11:00–15:00. Price €10.50. The buffet includes sushi, Chinese dishes, soup of the day, coffee, tea and desserts.",
+      "description": "Dragon Palace is a Chinese restaurant located in Turku’s Puutori. \n We serve a buffet lunch on weekdays from 11:00–15:00. Price €10.50. \nThe buffet includes sushi, Chinese dishes, soup of the day, coffee, tea and desserts.",
       "opening_hours": {
         "Mon–Thu": "11–20",
         "Fri": "11–21",
