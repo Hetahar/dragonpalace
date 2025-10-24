@@ -127,6 +127,17 @@
   font-weight: 600;
 }
 
+.footer-info a {
+  color: var(--ink, #191919);
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.footer-info a:hover {
+  color: var(--red-ink, #a3141a);
+  text-decoration: underline;
+}
+
 .contact-info {
   display: flex;
   flex-direction: column;

@@ -38,7 +38,9 @@ const FooterComponent = () => {
                 <p>
                   <strong>Puhelin / Phone:</strong>
                 </p>
-                <p>{footerData.fi.contact.phone}</p>
+                <p>
+                  <a href="tel:+3582338928">{footerData.fi.contact.phone}</a>
+                </p>
               </div>
             </div>
           </div>
