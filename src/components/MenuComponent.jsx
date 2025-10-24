@@ -6,8 +6,20 @@ const MenuComponent = () => {
 
   useEffect(() => {
     fetch('/menu.json')
-      .then((response) => response.json())
-      .then((data) => setMenuData(data));
+      .then((response) => {
+        console.log('Menu fetch response:', response);
+        if (!response.ok) {
+          throw new Error('Network response was not ok');
+        }
+        return response.json();
+      })
+      .then((data) => {
+        console.log('Menu data loaded:', data);
+        setMenuData(data);
+      })
+      .catch((error) => {
+        console.error('Error loading menu data:', error);
+      });
   }, []);
 
   if (!menuData) return <div className="menu-container">Loading...</div>;
@@ -15,15 +27,15 @@ const MenuComponent = () => {
   const formatPrice = (priceLike) => {
     if (priceLike == null) return null;
     if (typeof priceLike === 'number') return priceLike.toFixed(2);
-    const normalized = String(priceLike).replace(',', '.').replace(/[^\d.]/g, '');
+    const normalized = String(priceLike)
+      .replace(',', '.')
+      .replace(/[^\d.]/g, '');
     const num = Number(normalized);
     return Number.isFinite(num) ? num.toFixed(2) : String(priceLike);
   };
 
   return (
     <div className="menu-container">
-      <h1>{menuData.restaurant}</h1>
-
       {menuData.categories?.map((category, categoryIndex) => (
         <div key={categoryIndex}>
           <h2>{category.name}</h2>

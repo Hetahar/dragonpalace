@@ -1,0 +1,145 @@
+/* ========================= Footer Component ========================= */
+/* Matches the MenuPage design with consistent styling */
+
+.footer-container {
+  background: linear-gradient(
+    135deg,
+    var(--paper, #fffdfa) 0%,
+    rgba(200, 167, 90, 0.05) 100%
+  );
+  border-top: 2px solid rgba(200, 167, 90, 0.2);
+  padding: clamp(24px, 4vw, 40px);
+  margin-top: 40px;
+  position: relative;
+  overflow: hidden;
+  width: 100vw;
+  margin-left: calc(-50vw + 50%);
+}
+
+.footer-container::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 3px;
+  background: linear-gradient(90deg, var(--red, #b11a21), var(--gold, #c8a75a));
+}
+
+.footer-content {
+  max-width: 1000px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.contact-section h3 {
+  font-family: var(--font-display, Georgia, 'Times New Roman', serif);
+  font-weight: 700;
+  font-size: clamp(18px, 2.5vw, 24px);
+  letter-spacing: 0.5px;
+  color: var(--red-ink, #a3141a);
+  margin: 0 0 20px;
+  display: inline-block;
+  padding: 8px 16px 8px 0;
+  border-bottom: 3px solid var(--gold, #c8a75a);
+  position: relative;
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+}
+
+.contact-section h3::after {
+  content: '';
+  position: absolute;
+  bottom: -3px;
+  left: 0;
+  width: 40px;
+  height: 3px;
+  background: var(--red, #b11a21);
+  border-radius: 2px;
+}
+
+.contact-info {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  margin-bottom: 12px;
+}
+
+.contact-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 4px;
+  padding: 12px 16px;
+  background: linear-gradient(
+    135deg,
+    rgba(200, 167, 90, 0.05),
+    rgba(177, 26, 33, 0.02)
+  );
+  border-radius: 8px;
+  border: 1px solid rgba(200, 167, 90, 0.15);
+}
+
+.contact-item strong {
+  font-weight: 700;
+  color: var(--red-ink, #a3141a);
+  font-size: 0.95rem;
+  letter-spacing: 0.3px;
+}
+
+.contact-item span {
+  color: var(--ink, #191919);
+  font-weight: 500;
+  font-size: 1rem;
+}
+
+.footer-message {
+  border-top: 1px solid rgba(200, 167, 90, 0.2);
+  padding-top: 8px;
+  margin-top: 8px;
+}
+
+.footer-message p {
+  margin: 4px 0;
+  font-style: italic;
+  color: var(--muted, #191919);
+  font-size: 1rem;
+  font-weight: 500;
+}
+
+.footer-message p:first-child {
+  color: var(--red-ink, #a3141a);
+  font-weight: 600;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+  .contact-info {
+    gap: 8px;
+  }
+
+  .contact-item {
+    padding: 10px 12px;
+  }
+
+  .contact-item strong {
+    font-size: 0.9rem;
+  }
+
+  .contact-item span {
+    font-size: 0.95rem;
+  }
+}
+
+/* Print styles */
+@media print {
+  .footer-container {
+    background: #ffffff !important;
+    border: 1px solid #00000020;
+    box-shadow: none !important;
+    page-break-inside: avoid;
+  }
+
+  .footer-container::before {
+    display: none !important;
+  }
+}

@@ -1,16 +1,22 @@
-import React from "react";
-import MenuComponent from "../components/MenuComponent";
-import "../styles/MenuPage.css";
+import React from 'react';
+import MenuComponent from '../components/MenuComponent';
+import FooterComponent from '../components/FooterComponent';
+import '../styles/MenuPage.css';
 
 const MenuPage = () => {
   return (
     <div className="menu-page">
       <header>
-        <h1>Welcome to the Menu Page</h1>
+        <img
+          src="/DragonPalace.PNG"
+          alt="Dragon Palace Logo"
+          className="restaurant-logo"
+        />
       </header>
       <main>
         <MenuComponent />
       </main>
+      <FooterComponent />
     </div>
   );
 };
