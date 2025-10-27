@@ -6,7 +6,7 @@ const HomePage = ({ navigate }) => {
   return (
     <div className="home-page">
       <HomeComponent navigate={navigate} />
-      <FooterComponent />
+      <FooterComponent navigate={navigate} isHomePage={true} />
     </div>
   );
 };

@@ -17,6 +17,52 @@
   );
 }
 
+/* Menu Navigation */
+.menu-navigation {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  justify-content: center;
+  margin: 0 auto 32px;
+  max-width: 1000px;
+  padding: 20px;
+  background: linear-gradient(
+    135deg,
+    var(--paper, #fffdfa) 0%,
+    rgba(200, 167, 90, 0.05) 100%
+  );
+  border: 2px solid rgba(200, 167, 90, 0.2);
+  border-radius: 16px;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.05);
+}
+
+.menu-nav-button {
+  padding: 10px 20px;
+  background: linear-gradient(
+    135deg,
+    rgba(200, 167, 90, 0.1),
+    rgba(177, 26, 33, 0.05)
+  );
+  border: 1px solid rgba(200, 167, 90, 0.3);
+  border-radius: 8px;
+  color: var(--red-ink, #a3141a);
+  font-weight: 600;
+  font-size: 0.9rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  white-space: nowrap;
+}
+
+.menu-nav-button:hover {
+  background: linear-gradient(
+    135deg,
+    rgba(200, 167, 90, 0.2),
+    rgba(177, 26, 33, 0.1)
+  );
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
 /* Restaurant title inside the component */
 .menu-container > h1 {
   font-family: var(--font-display, Georgia, 'Times New Roman', serif);
@@ -161,6 +207,10 @@
 }
 .menu-container > div > ul > li > div ul > li {
   margin: 2px 0 0;
+}
+
+.menu-page > header {
+  padding-bottom: 0px !important;
 }
 
 /* Loading state */

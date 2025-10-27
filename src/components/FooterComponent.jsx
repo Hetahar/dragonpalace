@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import '../styles/FooterComponent.css';
 
-const FooterComponent = () => {
+const FooterComponent = ({ navigate, isHomePage }) => {
   const [footerData, setFooterData] = useState(null);
 
   useEffect(() => {
@@ -9,6 +9,13 @@ const FooterComponent = () => {
       .then((response) => response.json())
       .then((data) => setFooterData(data));
   }, []);
+
+  const handleLogoClick = () => {
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+    if (!isHomePage && navigate) {
+      navigate('home');
+    }
+  };
 
   if (!footerData) return <div className="footer-container">Loading...</div>;
 
@@ -21,6 +28,8 @@ const FooterComponent = () => {
               src="/SecondaryLogo.PNG"
               alt="Dragon Palace"
               className="footer-logo"
+              onClick={handleLogoClick}
+              style={{ cursor: 'pointer' }}
             />
           </div>
 
