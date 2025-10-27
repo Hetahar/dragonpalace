@@ -4,11 +4,16 @@ import FooterComponent from '../components/FooterComponent';
 import '../styles/MenuPage.css';
 
 const MenuPage = ({ navigate }) => {
+  const handleBackClick = () => {
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+    setTimeout(() => navigate('home'), 300);
+  };
+
   return (
     <div className="menu-page">
       <button
         className="back-to-home-button"
-        onClick={() => navigate('home')}
+        onClick={handleBackClick}
         aria-label="Back to homepage"
       >
         <img src="/left-arrow.png" alt="Back" />

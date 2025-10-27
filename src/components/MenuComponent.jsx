@@ -24,6 +24,13 @@ const MenuComponent = () => {
 
   if (!menuData) return <div className="menu-container">Loading...</div>;
 
+  const scrollToCategory = (categoryName) => {
+    const element = document.getElementById(categoryName);
+    if (element) {
+      element.scrollIntoView({ behavior: 'smooth', block: 'start' });
+    }
+  };
+
   const formatPrice = (priceLike) => {
     if (priceLike == null) return null;
     if (typeof priceLike === 'number') return priceLike.toFixed(2);
@@ -35,48 +42,62 @@ const MenuComponent = () => {
   };
 
   return (
-    <div className="menu-container">
-      {menuData.categories?.map((category, categoryIndex) => (
-        <div key={categoryIndex}>
-          <h2>{category.name}</h2>
+    <>
+      <nav className="menu-navigation">
+        {menuData.categories?.map((category, categoryIndex) => (
+          <button
+            key={categoryIndex}
+            onClick={() => scrollToCategory(category.name)}
+            className="menu-nav-button"
+          >
+            {category.name}
+          </button>
+        ))}
+      </nav>
 
-          <ul>
-            {category.items?.map((item, idx) => (
-              <li key={item.id ?? `${categoryIndex}-${idx}`}>
-                <div>
-                  {item.id && <strong>{item.id}. </strong>}
-                  <strong>{item.name}</strong>
-                  {item.english && <span> ({item.english})</span>}
-                </div>
+      <div className="menu-container">
+        {menuData.categories?.map((category, categoryIndex) => (
+          <div key={categoryIndex} id={category.name}>
+            <h2>{category.name}</h2>
 
-                {(item.price != null || item.priceText) && (
-                  <div>€{formatPrice(item.price ?? item.priceText)}</div>
-                )}
-
-                {Array.isArray(item.items) && item.items.length > 0 && (
-                  <ul>
-                    {item.items.map((subItem, subIndex) => (
-                      <li key={subIndex}>{subItem}</li>
-                    ))}
-                  </ul>
-                )}
-
-                {Array.isArray(item.options) && item.options.length > 0 && (
+            <ul>
+              {category.items?.map((item, idx) => (
+                <li key={item.id ?? `${categoryIndex}-${idx}`}>
                   <div>
-                    <em>Options:</em>
+                    {item.id && <strong>{item.id}. </strong>}
+                    <strong>{item.name}</strong>
+                    {item.english && <span> ({item.english})</span>}
+                  </div>
+
+                  {(item.price != null || item.priceText) && (
+                    <div>€{formatPrice(item.price ?? item.priceText)}</div>
+                  )}
+
+                  {Array.isArray(item.items) && item.items.length > 0 && (
                     <ul>
-                      {item.options.map((opt, oi) => (
-                        <li key={oi}>{opt}</li>
+                      {item.items.map((subItem, subIndex) => (
+                        <li key={subIndex}>{subItem}</li>
                       ))}
                     </ul>
-                  </div>
-                )}
-              </li>
-            ))}
-          </ul>
-        </div>
-      ))}
-    </div>
+                  )}
+
+                  {Array.isArray(item.options) && item.options.length > 0 && (
+                    <div>
+                      <em>Options:</em>
+                      <ul>
+                        {item.options.map((opt, oi) => (
+                          <li key={oi}>{opt}</li>
+                        ))}
+                      </ul>
+                    </div>
+                  )}
+                </li>
+              ))}
+            </ul>
+          </div>
+        ))}
+      </div>
+    </>
   );
 };
 
