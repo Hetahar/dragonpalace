@@ -1,0 +1,6 @@
+# Render redirects for Dragon Palace
+# Note: Set up domain redirects in Render Dashboard under "Redirects/Rewrites"
+
+# SPA fallback - serve index.html for all routes
+/*    /index.html   200
+

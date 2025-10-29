@@ -1,0 +1,14 @@
+# Dragon Palace - robots.txt
+# Allow all search engines to crawl the site
+
+User-agent: *
+Allow: /
+Disallow: /node_modules/
+
+# Sitemap location
+Sitemap: https://www.dragonpalace.fi/sitemap.xml
+Sitemap: https://www.ravintoladragonpalace.fi/sitemap.xml
+
+# Crawl-delay for polite bots
+Crawl-delay: 1
+

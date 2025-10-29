@@ -17,6 +17,32 @@ function App() {
   const navigate = (page) => {
     setCurrentPage(page);
     window.history.pushState({}, '', page === 'home' ? '/' : `/${page}`);
+
+    // Update page title and meta description for SEO
+    if (page === 'menu') {
+      document.title = 'Ruokalista - Dragon Palace | Menu';
+      const metaDescription = document.querySelector(
+        'meta[name="description"]'
+      );
+      if (metaDescription) {
+        metaDescription.setAttribute(
+          'content',
+          'Tutustu Dragon Palacen laajaan kiinalaiseen ruokalistaan. Sushi, nuudelit, riisi, kasvisruoat ja paljon muuta. Buffet-lounas arkisin 10,50 €.'
+        );
+      }
+    } else {
+      document.title =
+        'Dragon Palace - Kiinalainen Ravintola Turussa | Chinese Restaurant in Turku';
+      const metaDescription = document.querySelector(
+        'meta[name="description"]'
+      );
+      if (metaDescription) {
+        metaDescription.setAttribute(
+          'content',
+          'Dragon Palace on Turun Puutorissa toimiva kiinalainen ravintola. Tarjoamme buffet-lounaan arkisin klo 11–15 hintaan 10,50 €. Sushi, kiinalaiset ruoat, keitto, kahvi ja tee sisältyy. Brahenkatu 12, Turku.'
+        );
+      }
+    }
   };
 
   // Handle browser back/forward buttons
@@ -25,8 +51,29 @@ function App() {
       const path = window.location.pathname;
       if (path === '/menu') {
         setCurrentPage('menu');
+        document.title = 'Ruokalista - Dragon Palace | Menu';
+        const metaDescription = document.querySelector(
+          'meta[name="description"]'
+        );
+        if (metaDescription) {
+          metaDescription.setAttribute(
+            'content',
+            'Tutustu Dragon Palacen laajaan kiinalaiseen ruokalistaan. Sushi, nuudelit, riisi, kasvisruoat ja paljon muuta. Buffet-lounas arkisin 10,50 €.'
+          );
+        }
       } else {
         setCurrentPage('home');
+        document.title =
+          'Dragon Palace - Kiinalainen Ravintola Turussa | Chinese Restaurant in Turku';
+        const metaDescription = document.querySelector(
+          'meta[name="description"]'
+        );
+        if (metaDescription) {
+          metaDescription.setAttribute(
+            'content',
+            'Dragon Palace on Turun Puutorissa toimiva kiinalainen ravintola. Tarjoamme buffet-lounaan arkisin klo 11–15 hintaan 10,50 €. Sushi, kiinalaiset ruoat, keitto, kahvi ja tee sisältyy. Brahenkatu 12, Turku.'
+          );
+        }
       }
     };
 

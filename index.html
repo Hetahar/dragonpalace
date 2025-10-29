@@ -1,10 +1,113 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fi">
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/jpeg" href="/DragonLogo2.png" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Dragon Palace</title>
+
+    <!-- Primary meta tags -->
+    <title>
+      Dragon Palace - Kiinalainen Ravintola Turussa | Chinese Restaurant in
+      Turku
+    </title>
+    <meta
+      name="title"
+      content="Dragon Palace - Kiinalainen Ravintola Turussa | Chinese Restaurant in Turku"
+    />
+    <meta
+      name="description"
+      content="Dragon Palace on Turun Puutorissa toimiva kiinalainen ravintola. Tarjoamme buffet-lounaan arkisin klo 11–15 hintaan 10,50 €. Sushi, kiinalaiset ruoat, keitto, kahvi ja tee sisältyy. Brahenkatu 12, Turku."
+    />
+    <meta
+      name="keywords"
+      content="Dragon Palace, kiinalainen ravintola, chinese restaurant, Turku, buffet, sushi, lounas, lunch, Puutori, Brahenkatu, ravintola Turku"
+    />
+    <meta name="author" content="Dragon Palace" />
+    <meta name="robots" content="index, follow" />
+    <meta name="language" content="Finnish, English" />
+    <meta name="revisit-after" content="7 days" />
+
+    <!-- Canonical URL -->
+    <link rel="canonical" href="https://www.dragonpalace.fi/" />
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="/DragonLogo2.png" />
+    <link rel="apple-touch-icon" href="/DragonLogo2.png" />
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://www.dragonpalace.fi/" />
+    <meta
+      property="og:title"
+      content="Dragon Palace - Kiinalainen Ravintola Turussa"
+    />
+    <meta
+      property="og:description"
+      content="Kiinalainen ravintola Turun Puutorissa. Buffet-lounas arkisin 11–15 (10,50 €)."
+    />
+    <meta
+      property="og:image"
+      content="https://www.dragonpalace.fi/DragonPalace.PNG"
+    />
+    <meta property="og:locale" content="fi_FI" />
+    <meta property="og:locale:alternate" content="en_GB" />
+    <meta property="og:site_name" content="Dragon Palace" />
+
+    <!-- Structured Data (JSON-LD) for Restaurant -->
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "Restaurant",
+        "name": "Dragon Palace",
+        "image": "https://www.dragonpalace.fi/DragonPalace.PNG",
+        "logo": "https://www.dragonpalace.fi/DragonLogo2.png",
+        "@id": "https://www.dragonpalace.fi",
+        "url": "https://www.dragonpalace.fi",
+        "telephone": "+358-2-2338928",
+        "priceRange": "€€",
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "Brahenkatu 12",
+          "addressLocality": "Turku",
+          "postalCode": "20100",
+          "addressCountry": "FI"
+        },
+        "geo": {
+          "@type": "GeoCoordinates",
+          "latitude": 60.4518,
+          "longitude": 22.2666
+        },
+        "openingHoursSpecification": [
+          {
+            "@type": "OpeningHoursSpecification",
+            "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday"],
+            "opens": "11:00",
+            "closes": "20:00"
+          },
+          {
+            "@type": "OpeningHoursSpecification",
+            "dayOfWeek": "Friday",
+            "opens": "11:00",
+            "closes": "21:00"
+          },
+          {
+            "@type": "OpeningHoursSpecification",
+            "dayOfWeek": "Saturday",
+            "opens": "12:00",
+            "closes": "21:00"
+          },
+          {
+            "@type": "OpeningHoursSpecification",
+            "dayOfWeek": "Sunday",
+            "opens": "12:00",
+            "closes": "20:00"
+          }
+        ],
+        "servesCuisine": ["Chinese", "Asian", "Sushi"],
+        "menu": "https://www.dragonpalace.fi/menu",
+        "acceptsReservations": "True",
+        "hasMenu": "https://www.dragonpalace.fi/menu"
+      }
+    </script>
   </head>
   <body>
     <div id="root"></div>
