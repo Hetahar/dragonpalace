@@ -48,7 +48,7 @@ const FooterComponent = ({ navigate, isHomePage }) => {
                   <strong>Puhelin / Phone:</strong>
                 </p>
                 <p>
-                  <a href="tel:+3582338928">{footerData.fi.contact.phone}</a>
+                  <a href="tel:+35822338928">{footerData.fi.contact.phone}</a>
                 </p>
               </div>
             </div>
