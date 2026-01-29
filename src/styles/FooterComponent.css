@@ -191,6 +191,20 @@
   font-weight: 600;
 }
 
+.footer-copyright {
+  padding-top: 8px;
+  margin-top: 8px;
+  text-align: center;
+}
+
+.footer-copyright p {
+  margin: 0;
+  color: #ffffff;
+  font-size: 0.85rem;
+  font-weight: 500;
+  letter-spacing: 0.3px;
+}
+
 /* Responsive design */
 @media (max-width: 768px) {
   .footer-grid {

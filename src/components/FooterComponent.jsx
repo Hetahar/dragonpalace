@@ -73,6 +73,10 @@ const FooterComponent = ({ navigate, isHomePage }) => {
           <p>{footerData.fi.footer}</p>
           <p>{footerData.en.footer}</p>
         </div>
+
+        <div className="footer-copyright">
+          <p>© 2025 Menang Oy</p>
+        </div>
       </div>
     </footer>
   );
